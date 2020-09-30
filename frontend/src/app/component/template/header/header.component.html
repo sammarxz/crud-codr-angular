@@ -1,12 +1,14 @@
 <mat-toolbar color="primary" class="header">
   <span>
-    <a>
+    <a routerLink="/">
       <mat-icon aria-hidden="false" aria-label="Carrinho de compras">shopping_cart</mat-icon>
       <span>Compras</span>
     </a>
   </span>
-  <button mat-raised-button color="accent">
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Adicionar Item">add</mat-icon>
-    Adicionar Produto
-  </button>
+  <a routerLink="/add-product">
+    <button mat-raised-button color="accent">
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Adicionar Item">add</mat-icon>
+      Adicionar Produto
+    </button>
+  </a>
 </mat-toolbar>

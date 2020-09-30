@@ -5,20 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Views
+import { HomeComponent } from './views/home/home.component';
+
 // Components
 import { HeaderComponent } from './component/template/header/header.component';
+import { FooterComponent } from './component/template/footer/footer.component';
 
 // Material UI
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { FooterComponent } from './component/template/footer/footer.component';
+import { MatCardModule } from '@angular/material/card';
+import { CreateProductComponent } from './views/create-product/create-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,8 @@ import { FooterComponent } from './component/template/footer/footer.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
