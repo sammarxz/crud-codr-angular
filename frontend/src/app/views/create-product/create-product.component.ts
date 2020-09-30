@@ -14,8 +14,8 @@ import { ProductService } from 'src/app/shared/service/product.service';
 
 export class CreateProductComponent implements OnInit {
   product: Product = {
-    name: 'Produto de teste',
-    price: 120.34
+    name: '',
+    price: null
   }
 
   constructor(private productService: ProductService,

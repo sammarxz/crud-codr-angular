@@ -21,9 +21,9 @@
       "id": 4
     },
     {
-      "name": "Produto de teste",
-      "price": 120.34,
-      "id": 5
+      "name": "Veio do Formulário",
+      "price": "203.30",
+      "id": 6
     }
   ]
 }
