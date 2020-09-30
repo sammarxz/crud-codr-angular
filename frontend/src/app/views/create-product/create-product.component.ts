@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 
+import { Product } from './../../shared/model/product.model';
+
 // Services
 import { ProductService } from 'src/app/shared/service/product.service';
 
@@ -11,6 +13,11 @@ import { ProductService } from 'src/app/shared/service/product.service';
 })
 
 export class CreateProductComponent implements OnInit {
+  product: Product = {
+    name: 'Produto de teste',
+    price: 120.34
+  }
+
   constructor(private productService: ProductService,
               private router: Router) { }
 
@@ -18,7 +25,10 @@ export class CreateProductComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.productService.showMessage('Hello form service');
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.showMessage('Produto Criado!');
+      this.router.navigate(['/']);
+    });
   }
 
   cancel(): void {
