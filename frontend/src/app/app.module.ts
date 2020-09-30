@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { CreateProductComponent } from './views/create-product/create-product.component';
+import { RedDirective } from './directives/red.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CreateProductComponent } from './views/create-product/create-product.co
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    RedDirective
   ],
   imports: [
     BrowserModule,
